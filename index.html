@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaimCheckAI - Real-Time Intelligence for Enterprise Meetings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4F46E5, #06B6D4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-shadow {
+            box-shadow: 0 0 40px rgba(79, 70, 229, 0.4);
+        }
+        .bg-grid-gray-700\/\[0\.2\] {
+            background-image: linear-gradient(to right, rgba(100, 116, 139, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(100, 116, 139, 0.2) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-10 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">ClaimCheck<span class="text-indigo-400">AI</span></h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1280px-IBM_logo.svg.png" alt="IBM Watsonx Logo" class="h-6 opacity-80">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-gray-700/[0.2] [mask-image:linear-gradient(to_bottom,white_5%,transparent_90%)]"></div>
+        <div class="container mx-auto px-6 pt-32 pb-24 text-center relative z-1">
+            <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
+                Ground Every Decision in <span class="gradient-text">Fact</span>. Instantly.
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                ClaimCheckAI is the real-time intelligence layer for your enterprise meetings. It integrates with your workflow to validate every claim against your trusted data, powered by IBM watsonx.
+            </p>
+            <a href="https://huggingface.co/spaces/ClaimCheck/ClaimCheckAI" target="_blank" rel="noopener noreferrer" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 glow-shadow">
+                See a Live Demo
+            </a>
+        </div>
+    </main>
+
+    <!-- The Problem Section -->
+    <section class="py-16 bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">Meetings Built on Uncertainty</h3>
+            <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-4xl mb-4">🤔</div>
+                    <h4 class="font-semibold text-lg">Delayed Decisions</h4>
+                    <p class="text-gray-400 mt-2">Time wasted on "Let me double-check that and get back to you."</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-4xl mb-4">📉</div>
+                    <h4 class="font-semibold text-lg">Costly Errors</h4>
+                    <p class="text-gray-400 mt-2">Strategic plans built on outdated or inaccurate information.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="text-4xl mb-4">↔️</div>
+                    <h4 class="font-semibold text-lg">Team Misalignment</h4>
+                    <p class="text-gray-400 mt-2">Departments argue over conflicting data, killing productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="demo" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-4">The Solution: Real-Time Verification</h3>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-12">ClaimCheckAI listens, understands, and retrieves evidence from your single source of truth the moment a claim is made. No more doubt, just data-driven clarity.</p>
+
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-2xl border border-gray-700 p-8">
+                <div class="text-left font-mono text-sm space-y-4">
+                   <div class="flex items-start">
+                        <span class="text-indigo-400 mr-3 font-bold text-lg">1.</span>
+                        <div>
+                            <h4 class="font-semibold text-white">Identify Key Claims</h4>
+                            <p class="text-gray-400">Our ASR and Claim Extractor agents actively listen to conversations and pinpoint verifiable facts and data points mentioned during the meeting.</p>
+                        </div>
+                   </div>
+                   <div class="flex items-start">
+                        <span class="text-indigo-400 mr-3 font-bold text-lg">2.</span>
+                        <div>
+                            <h4 class="font-semibold text-white">Query Your Knowledge Base</h4>
+                            <p class="text-gray-400">The Retriever Agent instantly checks the claim against your secure, internal data (Confluence, Salesforce) and trusted external sources using IBM watsonx embeddings.</p>
+                        </div>
+                   </div>
+                   <div class="flex items-start">
+                        <span class="text-indigo-400 mr-3 font-bold text-lg">3.</span>
+                        <div>
+                            <h4 class="font-semibold text-white">Deliver Instant Verdicts</h4>
+                            <p class="text-gray-400">The Verifier Agent delivers a simple, unobtrusive notification with a verdict (<span class="text-green-400">Confirmed ✅</span>, <span class="text-red-400">Contradicted ❌</span>) and the source, right in your meeting window.</p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built for Enterprise Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12">Built for the Enterprise</h3>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <h4 class="font-semibold">Accelerate Decision Velocity</h4>
+                    <p class="text-gray-400 text-sm mt-2">Settle factual debates on the spot and move forward with confidence.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <h4 class="font-semibold">Mitigate Operational Risk</h4>
+                    <p class="text-gray-400 text-sm mt-2">Ensure every conversation is compliant and grounded in verified information.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <h4 class="font-semibold">Integrates with Your Stack</h4>
+                    <p class="text-gray-400 text-sm mt-2">Works seamlessly with Microsoft Teams, Zoom, Slack, and is built to leverage the power of IBM watsonx.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-gray-900/50 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold">Ready to transform your meetings?</h3>
+            <p class="text-gray-400 mt-4 mb-8">Get a personalized demo today or join our exclusive pilot program.</p>
+            <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 glow-shadow">
+                Schedule a Demo
+            </a>
+            <p class="text-xs text-gray-500 mt-12">&copy; 2025 ClaimCheckAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
