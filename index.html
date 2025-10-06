@@ -26,11 +26,19 @@
 </head>
 <body class="bg-gray-900 text-white antialiased">
 
+    <!-- Winners Banner -->
+    <div class="absolute top-4 right-4 z-20">
+        <div class="flex items-center gap-4 bg-gray-800/50 border border-gray-700 rounded-full px-4 py-2 backdrop-blur-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1280px-IBM_logo.svg.png" alt="IBM Logo" class="h-4 opacity-80">
+            <div class="w-px h-6 bg-gray-600"></div>
+            <p class="text-sm font-semibold text-gray-300">TechXChange 2025 Hackathon Winners</p>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="absolute top-0 left-0 right-0 z-10 p-6">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">ClaimCheck<span class="text-indigo-400">AI</span></h1>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1280px-IBM_logo.svg.png" alt="IBM Watsonx Logo" class="h-6 opacity-80">
         </div>
     </header>
 
@@ -164,8 +172,7 @@
                  <div class="flex justify-center items-center gap-8 mt-4">
                     <div class="text-center">
                         <p class="text-sm text-gray-400">Scan to connect on LinkedIn</p>
-                         <!-- TODO: Replace with your actual LinkedIn QR code image -->
-                        <div class="w-24 h-24 bg-gray-700 rounded-lg mt-2 flex items-center justify-center text-xs text-gray-400">QR Code</div>
+                         <img src="linkedin.png" alt="LinkedIn QR Code" class="w-24 h-24 rounded-lg mt-2" onerror="this.onerror=null;this.src='https://placehold.co/96x96/374151/9ca3af?text=QR';">
                     </div>
                     <div class="text-center">
                         <p class="text-sm text-gray-400">Email us</p>
