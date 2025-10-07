@@ -17,56 +17,63 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white antialiased">
+<body class="bg-gray-900 text-white antialiased flex flex-col min-h-screen">
 
-    <!-- Header -->
-    <header class="absolute top-0 left-0 right-0 z-10 p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">ClaimCheck<span class="text-indigo-400">AI</span></h1>
-            <a href="./index.html" class="text-sm text-gray-400 hover:text-white transition-colors">← Return to Home</a>
+    <!-- Unified Header -->
+    <header class="relative bg-gray-900 z-10 border-b border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 py-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                
+                <!-- Left side: Logo -->
+                <h1 class="text-2xl font-bold">ClaimCheck<span class="text-indigo-400">AI</span></h1>
+
+                <!-- Right side: Winners Banner -->
+                <div class="flex items-center gap-3 bg-gray-800/50 border border-gray-700 rounded-full px-3 py-1.5 text-xs sm:text-sm">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1280px-IBM_logo.svg.png" alt="IBM Logo" class="h-4 opacity-80">
+                    <div class="w-px h-5 bg-gray-600"></div>
+                    <p class="font-semibold text-gray-300 whitespace-nowrap">TechXChange 2025 Hackathon Winners</p>
+                </div>
+
+            </div>
         </div>
     </header>
 
-    <!-- Winners Banner -->
-    <div class="bg-gray-800 border-b border-gray-700 py-2">
-        <div class="container mx-auto flex items-center justify-center gap-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/1280px-IBM_logo.svg.png" alt="IBM Logo" class="h-5 opacity-80">
-            <div class="w-px h-6 bg-gray-600"></div>
-            <p class="text-sm font-semibold text-gray-300">TechXChange 2025 Hackathon Winners</p>
-        </div>
-    </div>
-
-    <div class="min-h-screen flex items-center justify-center px-4 py-12">
-        <div class="max-w-md w-full space-y-8 text-center">
-            <div>
-                <h2 class="text-3xl md:text-4xl font-extrabold">Request a Personalized Demo</h2>
-                <p class="mt-4 text-gray-400">We'll reach out after the conference to schedule a time that works for you.</p>
-            </div>
-            <form action="https://formspree.io/f/xanpbklq" method="POST" class="mt-8 space-y-6 bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                <div class="rounded-md shadow-sm -space-y-px">
-                    <div>
-                        <label for="full-name" class="sr-only">Full Name</label>
-                        <input id="full-name" name="name" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-600 bg-gray-900 placeholder-gray-500 text-white rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Full Name">
-                    </div>
-                    <div>
-                        <label for="email-address" class="sr-only">Email address</label>
-                        <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-600 bg-gray-900 placeholder-gray-500 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
-                    </div>
-                    <div>
-                        <label for="company" class="sr-only">Company</label>
-                        <input id="company" name="company" type="text" class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-600 bg-gray-900 placeholder-gray-500 text-white rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Company (Optional)">
-                    </div>
-                </div>
-
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="max-w-md w-full text-center">
+            <div class="space-y-8">
                 <div>
-                    <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-900">
-                        Submit Request
-                    </button>
+                    <h2 class="text-3xl md:text-4xl font-extrabold">Request a Personalized Demo</h2>
+                    <p class="mt-4 text-gray-400">We'll reach out after the conference to schedule a time that works for you.</p>
                 </div>
-            </form>
+                <form action="https://formspree.io/f/xanpbklq" method="POST" class="mt-8 space-y-6 bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="rounded-md shadow-sm -space-y-px">
+                        <div>
+                            <label for="full-name" class="sr-only">Full Name</label>
+                            <input id="full-name" name="name" type="text" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-600 bg-gray-900 placeholder-gray-500 text-white rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Full Name">
+                        </div>
+                        <div>
+                            <label for="email-address" class="sr-only">Email address</label>
+                            <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-600 bg-gray-900 placeholder-gray-500 text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+                        </div>
+                        <div>
+                            <label for="company" class="sr-only">Company</label>
+                            <input id="company" name="company" type="text" class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-600 bg-gray-900 placeholder-gray-500 text-white rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Company (Optional)">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-900">
+                            Submit Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+             <div class="mt-8 text-center">
+                <a href="./index.html" class="text-sm text-gray-400 hover:text-white transition-colors">← Visit our Website</a>
+            </div>
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
-
